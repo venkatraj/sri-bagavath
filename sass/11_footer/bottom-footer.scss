@@ -1,0 +1,72 @@
+ .footer-bottom {
+	min-height:45px;
+	padding: 10px 0;
+	color: $white;
+	//background-color: $c6;
+	background-image:url("../test/images/Top-Header.png");
+
+	p {
+		color: $white;
+		padding:10px 0px;
+		margin-bottom:0;
+	}
+	a {
+		color: $primary;
+		&:hover {
+			color: $secondary;
+		}
+	}
+
+	ul.menu {
+		text-align: right;
+		margin: 5px 0 0;
+		li {
+			display: inline-block;
+			padding: 0 10px;
+			border: 0;
+
+			a {
+				padding: 10px 5px;
+				display: block;
+				color: $white;
+
+			}
+		}
+		li.current_page_item a,
+		a:hover {
+			color: $primary;
+		}		
+	}
+	.widget {
+		padding: 0;
+	}
+	.footer-nav{
+	text-align:right;
+	margin-top:8px;
+	ul{
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+	
+	li{
+	display:inline-block;
+	margin:0px;
+	padding:5px;
+	a{
+	color:$white;
+	border:1px solid white;
+	padding:5px 10px;
+	&:hover{
+	color:#fab99c;
+	border-color:#fab99c;
+	}
+	}
+	}
+
+	}
+	}
+}
+
+.footer-nav .widget-title,.branding .social .widget-title  {
+	display: none;
+}

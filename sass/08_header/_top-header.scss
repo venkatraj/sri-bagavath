@@ -1,0 +1,72 @@
+.top-nav{
+	//background-color:gray;
+	background-image:url("../test/images/Top-Header.png");
+	line-height:1em;
+	color:$white;
+	
+	.textwidget {
+		padding:0;
+	}
+	.widget_text {
+		margin:0px;
+	}
+	.cart ul li{
+			margin-top:10px;
+			@include font-size(1.5);
+
+	}
+	ul{
+		margin:0px;
+		li{
+			float: left;
+			list-style: none;
+			padding:10px 5px;
+			
+			&:hover{
+				color:#fab99c;
+				}
+			
+			a{
+				color: $white;
+				padding: 4px 10px;
+	
+				&:hover{
+				color:#fab99c;
+				}
+				
+				i{
+					@include font-size(1.5);
+					
+				}
+
+
+			}
+		}
+	}
+	.cart {
+		float: left;
+		color: $white;
+		
+		ul {
+			//float: left;
+			li { 
+				margin-left:10px;
+				//float: left;
+			}
+		}
+	}
+	.cart-right {
+	       position:relative;
+	       //left:300px;
+	       float:right;
+	    li a{
+	     border:1px solid white;
+	     padding:0px 5px;
+	      &:hover{
+				border-color:#fab99c;
+				}
+	     }
+	}
+}
+
+

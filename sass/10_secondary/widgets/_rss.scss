@@ -1,0 +1,43 @@
+.rss-date, .widget_rss cite {
+	display: block;
+	color: $c2;
+	margin: 5px 0;
+}
+
+.left-sidebar .widget_rss {
+	ul {
+		margin: 0;
+		list-style-type: none;
+		li {
+			list-style-image: none !important;
+		}
+	}
+
+	a {
+		color: $c3 !important;
+		font-weight: 700;
+		font-size:18px;
+		&:hover {
+			color: $secondary !important;
+		}
+		 &:before{
+	   display:none;
+	    }
+	}
+
+	.widget-title a {
+		color: $secondary !important;
+		& img {
+			margin: 0;
+			display: inline;
+		}
+	   
+	}
+}
+.rss-date{
+	color:$primary;
+}
+.rssSummary {
+	@include font-size(1.5);
+	padding-top: 8px;
+}

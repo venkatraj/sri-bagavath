@@ -1,0 +1,41 @@
+#secondary select,
+.footer-widgets select {
+		-moz-appearance: none;
+		//appearance: none; 
+		background-color: $c1!important;
+		//border: 1px solid $c1;
+		//position:relative;
+		border-right:33px solid $primary;
+		cursor:pointer;
+}
+.drop{
+	position:relative;
+	border-top:none;
+	border-bottom:none;
+	//&:before{
+	//border:1px solide $primary;
+	//background-color:$primary;
+	//content:"";
+	//width:32px;
+	//height:31px;
+	//position:absolute;
+	//right:0px;
+	//bottom:0px;
+	//}
+	&:after{
+	position:absolute;
+	font-size:16px;
+	content:"\f0d7";
+	font-family:"FontAwesome";
+	color:$white;
+	right:12px;
+	//top:23px;
+	bottom:5px;
+	cursor:pointer;
+	}
+	select{
+	//border-top:none;
+	//border-bottom:none;
+	border:none;
+	}
+}

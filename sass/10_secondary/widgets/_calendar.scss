@@ -1,0 +1,110 @@
+.widget_calendar {
+		table {
+			border-collapse: separate;
+			margin-bottom: 0;
+			//margin-top: 18px;
+		#today {
+			background-color: $primary;
+			a {
+				color: $white;
+			}
+			color: $white;
+		}
+
+		.pad {
+			//visibility: hidden;
+		}
+
+		td#prev {
+			text-align: left;
+		}
+
+		td#next {
+			text-align: right;
+		}
+
+		caption, th, td {
+			text-align: center;
+			border: none;
+		}
+
+		caption {
+			padding: 7px 35px;
+			color: $white;
+			background-color: $primary;
+			position: relative;
+			width: 100%;
+			margin: 0px 0px 15px 0px;
+			&:before {
+				position: absolute;
+				content: "\f060";
+				top: 7px;
+				background-color:$white;
+				color:$primary;
+				//@include transition(all, 0.5s, ease);
+				width: 15px;
+				height:15px;
+			   // border-top: 18px solid transparent;
+				//border-bottom: 18px solid transparent; 
+				left:10px;
+				font-family: 'FontAwesome';   
+				border:1px solid $white;
+				border-radius:20px;
+				font-size:9.5px;
+			}
+			&:after {
+				position: absolute;
+				content: "\f061";
+				top: 7px;
+				background-color:$white;
+				color:$primary;
+				//@include transition(all, 0.5s, ease);
+				width: 15px;
+				height:15px;
+			   // border-top: 18px solid transparent;
+				//border-bottom: 18px solid transparent; 
+				//left:229px;
+				right:9px;
+				font-family: 'FontAwesome';   
+				border:1px solid $white;
+				border-radius:20px;
+				font-size:9.5px;
+			}
+
+			//&:after {
+				//right: -15px;
+			    //border-left: 15px solid $primary;
+			//}
+
+			//&:before {
+				//left: -15px;
+			   // border-right: 15px solid $primary;
+			//}
+		}
+
+		thead {
+			th {
+				padding: 7px 0;
+				border-bottom:1px solid $c1;
+			}
+
+		   td {
+			 padding: 10px 0;
+		    }
+	    }
+	}
+
+	tbody td{
+	border-bottom:1px solid $c1;
+	}
+
+	
+}
+
+.left-sidebar {
+	.widget_calendar {
+		caption {
+			padding: 7px 35px;
+		}	
+	}
+}

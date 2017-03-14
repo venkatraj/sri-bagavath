@@ -1,0 +1,20 @@
+.left-sidebar .textwidget,
+.footer-widgets .textwidget {
+	padding: 18px;
+	padding-left: 0;
+	font-size: .95em;
+	line-height: 1.2;
+	select{
+		padding:5px 20px 5px 10px;
+		background-color: $white;
+	}
+	
+	img {
+		display:block;
+		margin: 10px 0;
+	}	
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0;
+}

@@ -1,0 +1,19 @@
+.tagcloud {
+	padding: 0px 18px 18px 0;
+}
+	
+.widget_tag_cloud {
+	a {
+		padding: 6px 7px;
+		background-color: $primary;
+		color: $white;
+		margin-bottom: 4px;
+		display: inline-block;
+		font-size: 0.9em !important;
+		@include border-radius(3px);
+		&:hover {
+			background-color: $secondary;
+			color: $white;
+		}
+	}
+}

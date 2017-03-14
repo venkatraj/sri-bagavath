@@ -1,0 +1,24 @@
+.footer-widgets {
+	.textwidget {
+		.wpcf7-form {
+			position: relative;
+			margin-top: 10px;
+			input.wpcf7-email {
+				margin-bottom: 10px;
+				background-color: #7F7F7F;
+				border: 0;
+				color: $c1;
+				width: 98%;
+				padding: 6px 10px;
+			}
+			input.wpcf7-submit {
+				background-color: $primary;
+				@include transition(all, 0.5s,ease);
+				&:hover {
+					background-color: $secondary;
+					color: $white;
+				}
+			}
+		}
+	}
+}

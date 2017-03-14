@@ -1,0 +1,319 @@
+.widget-area {
+	.left-sidebar {
+		ul {
+			li {
+				//list-style-image: url("images/right-arrow-black.png");
+				padding: 11px 0px 11px 17px;
+				border-bottom: 1px solid $c1;
+				color: $c2;
+				display:block
+			}
+			a {
+				color: $c2;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+		.widget_recent_comments .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f0e5';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+		.widget_recent_entries .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f003';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_archive .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f073';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_categories .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f115';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_meta .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f02c';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_pages .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f044';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_calendar .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f073';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_tag_cloud .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f02b';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_nav_menu .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f0c9';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_search .widget-title {
+			position:relative;
+			&:before {
+			  content: '\f002';
+			  position: absolute;
+			  left: 0px;
+			  color: $primary;
+			  font-family: 'FontAwesome';
+			  top:5px;
+			  font-size: 18px;
+
+			}
+	    }
+	    .widget_rss .widget-title {
+			position:relative;
+			padding:14px 14px 14px 0px;
+			img{
+			    width:18px;
+			    height:18px;
+			    margin-right:6px;
+			    }
+			
+	    }
+	     
+
+	    //}
+	    .textwidget select{
+			//margin-top:18px;
+			}
+	    .widget_text .widget-title{
+	    padding:14px 14px 14px 0px;
+
+	    }
+	}
+
+	
+	.left-sidebar .widget:first-child {
+		padding-top: 0;
+	}
+
+	ul ul {
+		margin:0;
+	}
+	ul ul li {
+		padding-left: 10px !important;
+	}
+
+}
+
+
+
+.footer-widgets .widget {
+	padding: 36px 0 10px;
+	line-height: 1;
+
+	ul, ol {
+		padding: 0;
+		list-style: none;
+
+		li {
+			padding: 8px 1px;
+			border-bottom: 1px solid $c1;
+			ul, ol {
+				padding: 0;
+			}
+		}
+	}
+
+	a {}
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+}
+
+.widget-area .left-sidebar .widget {
+	padding: 60px 0 10px;
+	font-size:13px;
+	ul, ol {
+
+
+		li a{
+			//border-bottom: 1px solid $c1;
+			padding:11px 0px 11px 0px;
+			position:relative;
+			&:before{
+			content:"\f105";
+			position:absolute;
+			font-family:"FontAwesome";
+			width:10px;
+			height:10px;
+			left:-24px;
+			//top:10px;
+			bottom:18 px;
+			padding-left:9px;
+			}
+			&:hover{
+			color:$primary;
+			}
+
+			ul,
+			ol {
+				padding: 0;
+			}
+		}
+		li{
+		&:hover{
+		color:$primary;
+		}
+		li:first-child{
+		padding-top:11px;
+		}
+
+		&:first-child{
+			padding-top:0px;
+			}
+			}
+	}
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+	h4{
+	font-size:24px;
+	font-weight:800px;
+	text-transform:uppercase;
+	}
+
+}
+
+.widget-title {
+	padding: 14px 14px 30px 30px;
+	margin-bottom: 0;
+	//position:relative;
+	&:first-child{
+	    padding-top:0px;
+	    }
+	
+}
+
+
+/* Search widget */
+.widget_search .search-submit {
+	margin-top: 5px;
+	@include transition(all, 0.5s, ease);
+}
+
+.left-sidebar .recentcomments a {
+	color: $primary ;
+	&:hover {
+		color: $secondary ;
+	}
+}
+
+.left-sidebar,
+.footer-widgets {
+	ul ul li:first-child {
+		border-top: 1px solid $c1;
+		margin-top: 10px;
+	}
+	ul ul li:last-child {
+		border-bottom: none !important;
+		padding-bottom:0 !important;
+	}
+}
+
+@import "calendar";
+
+@import "categories";
+
+@import "rss";
+
+@import "search";
+
+@import "text";
+
+@import "tag_cloud";
+
+@import "social";
+
+@import "select-drop-down";
+
+@import "recent_comments";

@@ -1,0 +1,35 @@
+.left-sidebar .widget_recent_comments {
+	ul {
+		li {
+			list-style-image: none;
+			list-style-position: outside;
+			list-style-type: none;
+			position: relative;
+			padding-left: 17px;
+
+			.comment-author-link .url  {
+				padding:11px 0px 11px 0px;
+				position:relative;
+				//display: inline-block;
+
+				&:before{
+					content:"\f105";
+					position:absolute;
+					font-family:"FontAwesome";
+					width:10px;
+					height:10px;
+					display: inline-block;
+					left:-24px;
+					//top:10px;
+					bottom:18 px;
+					padding-left:9px;
+				}
+			}
+			a:before {
+				display: none;
+			}
+			
+
+		}
+	}
+}

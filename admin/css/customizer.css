@@ -1,0 +1,32 @@
+.wrap .gem-buy-pro,
+.wrap .description.customize-section-description a {
+  background: #E5493A;
+  color: white;
+  padding: 2px 7px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 2px; }
+
+.wrap .description.customize-section-description a:hover,
+.wrap .gem-buy-pro:hover {
+  background: #242424 !important;
+  color: #fff;
+}
+
+.wrap .gem-docs {
+	display: block;
+	font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.preview-notice a {
+  color: #242424;
+}
+
+.preview-notice a:hover {
+  color: #E5493A;
+}
+#customize-control-display_header_text > label {
+  display: none;
+}

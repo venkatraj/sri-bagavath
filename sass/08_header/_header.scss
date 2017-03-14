@@ -1,0 +1,170 @@
+ .site-header {
+   .topnav{
+      background-color:black;
+
+
+     }
+	.branding {
+	//background-color:$primary;
+	background-image:url("../images/sribagavath.png");
+		.site-branding {
+			padding: 0;
+			//color: $black;
+			//min-width: 35%;
+			display: inline-block;
+			//background-color: $primary;
+			position: relative;
+			min-height: 130px;	
+			img {
+				margin: 0;
+			}
+			&:after {
+				border-left: 40px solid $primary;
+				border-top: 65px solid transparent;
+				border-bottom: 65px solid transparent;
+				border-right: 0;
+				//content: "";
+				height: 0;
+				position: absolute;
+				right: -40px;
+				top: 0;
+				width: 0;
+			}
+
+			.site-title {
+				margin-bottom: 0;
+				padding-top: 30px;
+				line-height: 1;
+				a {
+					color: $white;
+					&:hover {
+						color: $secondary;
+					}
+				}
+			}
+
+			.site-title.img-logo {
+			}
+
+			&:before {
+				//background-color: $primary;
+				//@include position(absolute, $left:-1000px, $top: 0);
+				//@include size(1000px, 100%);
+				//content: "";
+			}
+		}
+
+		.site-description {
+		    color: $white;
+		    @include font-size(1.5);
+		    margin-bottom: 0;
+		    font-weight: 400;
+		    font-family: $copy_font;
+		}
+		.ten{
+		//margin:0px;
+		    .main-navigation{
+		           padding-top:25px;
+		    }
+		}
+	}
+
+	.three .search-form {
+		padding: 0;
+		position: relative;
+		top: -25px;
+		&:before {
+			position: absolute;
+			content: "";
+			left: -25px;
+			top: 0;
+		    width: 0;
+		    height: 0;
+		    border-top: 25px solid transparent;
+		    border-right: 25px solid $c7;
+		    border-bottom: 25px solid transparent;
+		}
+
+		&:after {
+			background-color: $c7;
+			@include position(absolute, $right: -1000px, $top: 0);
+			@include size(1000px, 100%);
+			content: "";
+		}
+
+		input.search-field {
+			background-color: $c7;
+			padding: 14px 0;
+			display: block;
+			width: 83%;
+			padding-right: 5%;
+			color: $black;
+			padding-left: 12%;
+			border: 0;
+		}
+
+		input.search-submit {
+		    height: 16px;
+		    position: absolute;
+		    text-indent: -9999em;
+		    width: 15px;
+		    top: 18px;
+		    left: 0;
+		    background: url('images/icon-search-black.png') no-repeat left top;
+		    padding: 0;
+		    &:hover {
+				background: url('images/icon-search-black.png') no-repeat left top;		    
+		    }
+		}
+	}
+}
+
+.site-header {
+	
+}
+.no-sidebar {
+ 	float: none;
+ 	margin: 0 auto;
+ 	display: block;
+}
+
+/* Custom Header Image */
+
+.header-image {
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position: relative
+}
+.overlay {
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+}
+
+/* STICKY HEADER */
+
+.sticky-header #nav-wrap {
+	position: fixed;
+	top: -2px;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	.search-form  {
+		top: 5px; 
+	}
+}
+.boxed-container .sticky-header #nav-wrap {
+	width: auto;
+	left:auto;
+}
+.admin-bar .sticky-header #nav-wrap {
+	 top: 30px;
+}
+
+
+@import "top-header";

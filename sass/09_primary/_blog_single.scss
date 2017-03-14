@@ -1,0 +1,79 @@
+.author-bio {
+	margin-bottom: 60px;
+	.author-info {
+		.avatar {
+			width: 50px;
+			float: left;
+		}
+
+		.description {
+			float: right;
+			width: 92%;
+		}
+	}
+	
+}
+
+.share-box {
+	h4 {
+		margin-bottom: 10px;
+	}
+
+	margin-bottom: 60px;
+
+	ul {
+		text-align: left;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0 10px 0 0;
+			display: inline-block;
+			a {
+				@include size(30px,30px);
+				line-height: 30px;
+				@include rotate(45);
+				background-color: $secondary;
+				@include rotate(45);
+				color: $white;
+				display: block;
+				text-align: center;
+				i {
+					@include rotate(-45);
+				}
+				&:hover {
+					background-color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.related-posts {
+	margin-bottom: 60px;
+	ul#webulous-related-posts {
+		list-style-type: none;
+		margin: 0;
+		li {
+			width: 18%;
+			float: left;
+			margin: 1%;
+			line-height: normal;
+			text-align: center;
+			a {
+				line-height: normal;
+				&:hover {
+					color: $primary;
+				}
+				img {
+					margin: 0;
+				}
+			}
+			&:hover a { 
+				color: $secondary;
+			}
+		}
+	}
+}
+.social ul {
+	text-align:right;
+}

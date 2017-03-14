@@ -1,0 +1,24 @@
+hr {
+	background-color: $c2;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	
+}
+
+figure {
+	margin: 0;
+}
+
+@import "tables";
+
+@import "forms/forms";
+
+@import "lists";

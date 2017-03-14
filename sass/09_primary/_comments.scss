@@ -1,0 +1,207 @@
+.comment-content{
+	margin-top: 25px;
+	 a {
+		word-wrap: break-word;
+	}
+	ol{
+		list-style: decimal;
+		li {}
+	}
+
+}
+
+.form-submit input[type="submit"]{
+	padding: 15px;
+	font-weight: bold;
+}
+	
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-form-comment textarea{
+	color: $black; 
+	border: 1px solid $c1;
+}
+
+#recentcomments a{
+	color: $primary;
+	&:hover{
+	color:$c3;
+	}
+}
+
+#comments{
+	margin-top: 40px;
+}
+
+
+#comments .children,
+.comment-list {
+	list-style: none;
+	margin: 0;
+}
+
+.comment-list > li {
+		&:last-child {border:0;}
+
+		.children {
+			border: 0;
+			margin-left: 10% !important;
+			li {
+				article {}
+			}
+		}
+
+		article {
+			padding: 50px 0;
+			//border-bottom: 1px solid $c1;
+
+			.comment-meta {
+			    background-color:#f5f4f4;
+			    border:1px solid $c1;
+			    @include border-radius(5px);
+			    padding:15px;
+			
+				.comment-author {
+					span {
+						display: none;
+					}
+					b,a,cite {
+						color: $primary;
+						font-style: normal;
+						&:hover {
+							color: $secondary;
+						}
+					}
+					cite {
+						font-weight: 700;
+						@include font-size(1.6);
+					}
+				}
+				.comment-metadata {
+					a {
+						color: $c2;
+						@include font-size(1.4);
+						&:hover {
+							color: $c3;
+						}
+					}
+					.edit-link {
+						&:hover {
+							color: $c3;
+						}
+						i {
+							@include font-size(1.4);
+							color: $c2;
+							padding: 0 5px;
+						}
+					}
+				}
+			}
+
+			.comment-content {
+				ul {
+					list-style: square;
+				}
+			}
+			.reply{ 
+			display:inline-block;
+			position:relative;
+			bottom:20px;
+			right:-605px;
+			a{
+				text-transform: uppercase;
+				@include font-size(1.4);
+				background-color:#bbbaba;
+				@include border-radius(3px);
+				color:$white;
+				padding:3px;
+				display:inline-block;
+				&:hover{
+				background-color:$secondary;	
+				}
+			}
+			}
+			
+		}
+
+		.comments-avator {
+			height: 130px;
+			overflow:hidden;
+			position: absolute;
+			width: 130px;
+			float: left;
+
+			img {
+				margin: 0;
+				width:70px;
+				height:70px;
+			}
+
+			.overlay {
+				display:block;
+				width: 130px;
+				height: 130px;
+				position: absolute;
+				top: 0;
+				left:0;
+				z-index:500;
+				pointer-events:none; 
+				background: url('images/avator.png') no-repeat left top;
+				outline:0;		
+			}		
+		}
+
+		.comment-metadata,
+		.comment-author,
+		.comment-content,
+		.comment-awaiting-moderation {
+			display: block;
+			margin-left: 90px;
+			float: none;
+		}
+		.comment-content p{
+		margin-bottom:15px;
+		}
+}
+
+
+//Leave a Reply
+.comment-respond {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	p.comment-form-author,
+	p.comment-form-email {
+		width: 50%;
+		float: left;
+	}
+	p.comment-form-author input {
+		width: 98%;
+	}
+	p.comment-form-url {
+		width: 100%;
+	}
+	input,
+	textarea {
+		width: 100%;
+		border-color: $c1;
+		@include transition(all, 0.5s, ease);
+		&:hover {
+			border-color: $c2;
+		}
+	}
+	label {
+		display: block;
+	}
+
+	.form-submit input {
+		width: auto;
+		@include transition(all, 0.5s, ease);
+	}
+
+	textarea {
+		padding: 10px;
+	}
+}
